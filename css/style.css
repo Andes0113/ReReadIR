@@ -1,0 +1,51 @@
+body{
+    font-family: sans-serif;
+    background-color: #3a5b77;
+    color: rgb(220, 223, 226);
+    text-align: center;
+}
+h2{
+    text-align: left;
+    padding-top: 30px;
+}
+.radio{
+    padding-top: 10px;
+}
+#booksearch{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+#searchbutton{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+#searcharea, #searchdiv{
+    padding-top: 20px;
+}
+#radiodiv{
+    padding-top: 30px;
+}
+#results{
+    text-align: left;
+}
+#htmlform{
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.result{
+    padding-top: 1px;
+}
+.author{
+    padding-left: 20px;
+}
+.yearinput{
+    padding-top: 10px;
+}
+.agerestrict{
+    padding-top:5px
+}

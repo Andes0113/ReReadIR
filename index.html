@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html lang = "en">
-    <header>
-
-    </header>
+    <head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+        <title>ReRead</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
     <body>
-
+ 
+        <div class = "search">
+            <form action = "html" id = "htmlform">
+                <h1>ReRead</h1>
+                <div id = "searcharea">
+                    <input type = "text" id = "booksearch" name = "booksearch" size = 20 placeholder = "Search For a Book">
+                </div>
+                <div id = "searchdiv">
+                    <button type = "button" id = "searchbutton">Search</button>
+                </div>
+                <div id = "radiodiv">
+                    <div class = "radio">
+                        <label>
+                            <input type = "radio" id = "titlesearch" name = "option" value = "title" checked>
+                                Search By Title
+                        </label>
+                    </div>
+                    <div class = "radio">
+                        <label>
+                            <input type = "radio" id = "authorsearch" name = "option" value = "author">
+                            Search By Author
+                        </label>
+                    </div>
+                    <div class = "yearinput">
+                        <label>
+                            Written from:
+                            <input type = "text" id = "loweryear" placeholder = "Year">
+                            To:
+                            <input type = "text" id = "higheryear" placeholder = "Year">
+                        </label>
+                    </div>
+                    <div class = "agerestrict">
+                        <label>
+                            Intended for:
+                            <input type = "text" id = "agerestrict" placeholder = "Age">
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <h2>Results</h2>
+        <div id = "results">
+        </div>
+        <script src = "js/Book.js"></script>
+        <script src = "js/Catalog.js"></script>
         <script src = "js/script.js"></script>
     </body>
 </html>
