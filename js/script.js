@@ -22,7 +22,6 @@ searchbutton.on("click", function(){
     results = [];
     if(searchoption == "title"){
         for(let i = 0; i < catalog.books.length; i++){
-
             if(catalog.books[i].name.toLowerCase().indexOf(searchinput.val().toLowerCase()) > -1){
                 if((catalog.books[i].date >= parseInt($("#loweryear").val()) || $("#loweryear").val() == "")
                     && (((catalog.books[i].date <= parseInt($("#higheryear").val()))) || $("#higheryear").val() == "")
